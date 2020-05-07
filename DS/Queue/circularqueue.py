@@ -110,8 +110,7 @@ C.display()
 Circular Queue of max length 5 is ready. 
 
 
-DISPLAY: [10, 20, 30, 3, 4]
-A
+DISPLAY:
 The circular queue is 
 10  20  30  
 front is at index  0
@@ -124,8 +123,7 @@ rear is at index  2
 	Can't add element 80 as the circular queue is full.
 
 
-DISPLAY: [10, 20, 30, 60, 70]
-A
+DISPLAY:
 The circular queue is 
 10  20  30  60  70  
 front is at index  0
@@ -134,8 +132,7 @@ rear is at index  4
 	 20 is deleted from index  1
 	 30 is deleted from index  2
 
-DISPLAY: [10, 20, 30, 60, 70]
-A
+DISPLAY:
 The circular queue is 
 60  70  
 front is at index  3
@@ -145,8 +142,7 @@ rear is at index  4
 
 	Added element 100  at index  1
 
-DISPLAY: [90, 100, 30, 60, 70]
-B
+DISPLAY:
 The circular queue is 
 90 100 60 70 
 front is at index  3
@@ -155,8 +151,7 @@ rear is at index  1
 	 70 is deleted from index  4
 	 90 is deleted from index  0
 
-DISPLAY: [90, 100, 30, 60, 70]
-A
+DISPLAY:
 The circular queue is 
 100  
 front is at index  1
