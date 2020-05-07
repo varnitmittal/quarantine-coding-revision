@@ -8,7 +8,6 @@ class MyCircularQueue:
         if len(args) > self.max:
             print("Bounds Violated. Exiting...")
             exit(0)
-        
         else:
             for i in range(len(args)):
                 self.circular[i] = list(args)[i]
@@ -22,8 +21,7 @@ class MyCircularQueue:
     def isFull(self):
         if (self.rear + 1) % self.max == self.front:
             print("\tOverflow!")
-            return True
-        
+            return True        
         else:
             return False
 
@@ -62,20 +60,20 @@ class MyCircularQueue:
 
 
     def display(self):
-        print("\nDISPLAY:", self.circular)     
+        print("\nDISPLAY:")     
         if self.isEmpty():
             print("The queue is empty, nothing to display.")
             print("front is at index ", self.front)
             print("rear is at index ", self.rear)
+        
         elif self.rear >= self.front:
-            print("A") 
             print("The circular queue is ") 
             for i in range(self.front, self.rear + 1): 
                 print(self.circular[i], end = "  ")
             print("\nfront is at index ", self.front)
             print("rear is at index ", self.rear) 
+        
         else:    
-            print("B")
             print("The circular queue is ")
             for i in range(0, self.rear + 1): 
                 print(self.circular[i], end = " ")
