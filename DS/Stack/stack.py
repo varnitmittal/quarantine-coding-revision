@@ -1,5 +1,4 @@
-#Stack implementation thorugh array
-import array as arr
+#Stack implementation
 
 class Mystack:
     def __init__(self, *args):
@@ -8,7 +7,7 @@ class Mystack:
             print("Bounds Violation! Exiting...")
             exit(0)
         else:
-            self.stack = arr.array('i', list(args))
+            self.stack = list(args)
             print(self.stack)
 
     def push(self, element):
@@ -50,3 +49,13 @@ print(M.isEmpty())
 M.push(80)
 print(M.top())
 M.display()
+
+
+
+""" OUTPUT
+[10, 20, 30, 40, 50]
+False
+80
+Final stack is [10, 20, 30, 40, 50, 80]
+
+"""
