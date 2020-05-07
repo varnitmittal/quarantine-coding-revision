@@ -1,4 +1,4 @@
-#My own implementation of doble-ended circular qeque using python list/array
+#My own implementation of doble-ended circular queue using python list/array
 
 class MyDeque:
     def __init__(self, *args):
