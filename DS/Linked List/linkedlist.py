@@ -86,7 +86,21 @@ class MyLinkedList:
                 return
             curr = curr.next
             count += 1
-        
+
+    def reverse(self):
+        if self.isEmpty():
+            print("List is empty, nothing to reverse")
+            return
+        curr = self.head
+        prev_node = None
+        next_node = None
+        while curr:
+            next_node = curr.next      #linking to next node & shifting next node by one place
+            curr.next = prev_node      #reversing the previous link
+            prev_node = curr           #shifting previous node by one place
+            curr = next_node           #shifting current node by one place
+        self.head = prev_node          #finally making the last node the head
+
     def display(self):
         temp = self.head
         while(temp):
@@ -124,6 +138,12 @@ print("Length of list is: ", M.length())
 for key in [40, 8]:
     M.findKey(key)
 
+print("The original list: ")
+M.display()
+M.reverse()
+print("The reversed list: ")
+M.display()
+
 
 
 
@@ -146,5 +166,9 @@ for key in [40, 8]:
 Length of list is:  6
 	 40  found at index 4
 	 8  found at index 0
+The original list: 
+8  100  10  30  40  50  
 
+The reversed list: 
+50  40  30  10  100  8  
 """
